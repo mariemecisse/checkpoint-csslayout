@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>checkpoint Css layout</title>
+  </head>
+  <body class="py-8">
+    <!-- NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white">
+      <div class="container w-75">
+        <a class="navbar-brand" href="#">
+          <img
+            src="monimage.png"
+            alt="Logo"
+            width="36"
+            height="32"
+            class="d-inline-block align-text-top"
+          />
+          <span id="titre"> Docplanner </span>
+          <span id="soustitre"> Group </span>
+        </a>
+        <div class="">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="aproposdenous">
+                A propos de nous</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carriere"> Carrière</a>
+            </li>
+            <nav>
+              <li class="nav-item">
+                <a class="nav-link" href="departements"> Départements</a>
+
+                <ul id="menuderoulant">
+                  <li>
+                    <a href="marketingetrelationspubliques"
+                      >Marketing et relations publiques</a
+                    >
+                  </li>
+                  <li>
+                    <a href="reussiteclientetvente">Reussite client et vente</a>
+                  </li>
+                  <li><a href="itproduitdonnes">IT,produit,donnees</a></li>
+                  <li>
+                    <a href="financesadministration"
+                      >Finances & Administration</a
+                    >
+                  </li>
+                  <li><a href="rhetplus">RH et plus</a></li>
+                </ul>
+              </li>
+            </nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--Premiere section-->
+      <div class="container w-75">
+        <div class="d-flex flex-column align-items-center">
+          <img class="logo" src="monimage.png" alt="" />
+          <span id="titre" class="fs-1"
+            >Rendre l'expérience de soins plus humaine</span
+          >
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            Nous voulons que les patients trouvent le médecin idéal et prennent
+            rendez-vous de la manière la plus simple. Le parcours du patient
+            doit être agréable, et c'est pourquoi nous sommes toujours à ses
+            côtés : pour l'aider à trouver les meilleurs soins possibles.
+            N'importe quand n'importe où.
+          </div>
+          <div class="col">
+            Nous aidons également les médecins à mieux gérer leur cabinet et à
+            bâtir leur e-réputation. Grâce à notre solution intégrée de bout en
+            bout, les médecins peuvent non seulement améliorer leur présence en
+            ligne, mais aussi consacrer leur temps à ce qui compte vraiment :
+            leurs patients.
+          </div>
+        </div>
+        <div class="row margin-top-10">
+          <div class="col">
+            <div id="premierboite" class="card" style="width: 18rem">
+              <img
+                class="imagecard"
+                src="icon-patients.svg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pour les malades</h5>
+                <p class="card-text">
+                  Trouvez un médecin, réservez une visite et résolvez tout doute
+                  lié à la santé
+                </p>
+                <div class="dropdown">
+                  <button
+                    id="bouton1"
+                    class="btn btn-link dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Choisissez un pays
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div id="deuxiemeboite" class="card" style="width: 18rem">
+              <img
+                class="imagecard"
+                src="icon-doctors.svg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pour les médecins</h5>
+                <p class="card-text">
+                  Gagnez du temps dans la gestion des visites et réduisez de
+                  moitié les absences
+                </p>
+                <div class="dropdown">
+                  <button
+                    id="bouton2"
+                    class="btn btn-link dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Choisissez un pays
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div id="troisiemeboite" class="card" style="width: 18rem">
+              <img
+                class="imagecard"
+                src="icon-clinics.svg"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Pour les cliniques</h5>
+                <p class="card-text">
+                  Offrez une expérience patient exceptionnelle dans votre
+                  clinique
+                </p>
+                <div class="dropdown">
+                  <button
+                    id="bouton3"
+                    class="btn btn-link dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    2 à 20 spécialistes
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button
+                    id="bouton4"
+                    class="btn btn-link dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Plus de 20 spécialistes
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Deuxieme section-->
+        <div class="row mt-10">
+          <div class="col-md-4">
+            <h3 id="titre">
+              Nous sommes une entreprise mondiale avec une culture locale
+            </h3>
+          </div>
+          <div class="col-md-8">
+            <div class="d-flex flex-wrap gap-2">
+              <div class="d-flex align-items-center">
+                <a class="link-partenaire" href="">
+                  <img class="logopartenaire2" src="monimage.png" alt="" />
+                  <span> ZnanyLekarz</span>
+                </a>
+              </div>
+              <div class="d-flex align-items-center">
+                <a class="link-partenaire" href="">
+                  <img class="logopartenaire2" src="monimage.png" alt="" />
+                  <span> Doctoralia</span>
+                </a>
+              </div>
+              <div class="d-flex align-items-center">
+                <a class="link-partenaire" href="">
+                  <img class="logopartenaire2" src="monimage.png" alt="" />
+                  <span> MioDottore</span>
+                </a>
+              </div>
+              <div class="d-flex align-items-center">
+                <a class="link-partenaire" href="">
+                  <img class="logopartenaire2" src="monimage.png" alt="" />
+                  <span> DoktorTakvimi</span>
+                </a>
+              </div>
+              <div class="d-flex align-items-center">
+                <a class="link-partenaire" href="">
+                  <img class="logopartenaire2" src="monimage.png" alt="" />
+                  <span> Znamylekar</span>
+                </a>
+              </div>
+              <img class="logopartenaire" src="logo-jameda.svg" alt="" />
+              <img class="logopartenaire" src="logo-tuotempo.svg" alt="" />
+              <img class="logopartenaire" src="logo-gipo-primary.svg" alt="" />
+              <img class="logopartenaire" src="logo-clinicloud.svg" alt="" />
+              <img class="logopartenaire" src="logo-feegow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Troisieme section-->
+      <div class="mt-10" id="presentation">
+        <div class="container w-75 mt-5 pb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>La plus grande plateforme de soins de santé au monde</h3>
+              <span
+                >Nous travaillons à partir de 9 bureaux dans le monde entier,
+                donnant vie au groupe Docplanner dans 13 pays.</span
+              >
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-wrap justify-content-around">
+                <div class="card w-45" style="width: 18rem; margin-top: 5%">
+                  <img
+                    class="iconecard"
+                    src="flag.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 id="titre" class="card-title">Leader dans 13 pays</h5>
+                    <p id="soustitre" class="card-text">
+                      Pologne, Brésil, Mexique, Espagne, Italie, Allemagne,
+                      Turquie, Colombie, République tchèque, Portugal,
+                      Argentine, Pérou et Chili
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-45" style="width: 18rem; margin-bottom: 5%">
+                  <img
+                    class="iconecard"
+                    src="visits.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 id="titre" class="card-title">
+                      15 000 000 rendez-vous
+                    </h5>
+                    <p id="soustitre" class="card-text">
+                      réservé le mois dernier
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-45" style="width: 18rem; margin-top: 5%">
+                  <img
+                    class="iconecard"
+                    src="patients.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 id="titre" class="card-title">90 000 000 malades</h5>
+                    <p id="soustitre" class="card-text">
+                      visitez nos sites Web chaque mois
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-45" style="width: 18rem; margin-bottom: 5%">
+                  <img
+                    class="iconecard"
+                    src="doctors.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 id="titre" class="card-title">
+                      210 000 médecins actifs
+                    </h5>
+                    <p id="soustitre" class="card-text">
+                      faites confiance à nos solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Quatrieme section-->
+      <div class="row margin-top-10 d-flex flex-wrap">
+        <div class="container w-75">
+          <h3 id="titre">
+            Améliorer la vie de millions de personnes. Changez le vôtre pour
+            toujours.
+          </h3>
+          <p class="text-align-center">
+            Plus de 2800 coéquipiers partagent notre même vision, objectifs et
+            passion. Avec des bureaux à Varsovie, Barcelone, Munich, Istanbul,
+            Rome, Rio, Bologne, Mexico et Curitiba, notre recherche de grands
+            talents ne s'arrête jamais.
+          </p>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="warsaw.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span> Varsovie</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="barcelona.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span> Barcelone</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="munich.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span> Munich</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="istanbul.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Istanbul</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="rome.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Rome</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="bologna.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Bologna</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="curitiba.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Curitiba</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="rio-janeiro.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Rio de Janeiro</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="mexico-city.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Mexico</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="bogota.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span>Bogota</span>
+                    <button type="button" class="btn btn-primary">
+                      VOIR LES OUVERTURES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column mt-5 align-items-center">
+            <p class="fs-1 w-50 text-center">
+              Ça a l'air intéressant? Rejoignez nous maintenant!
+            </p>
+            <button type="button" class="btn btn-primary w-40">
+              VOIR TOUTES LES OUVERTURES EN COURS
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Pied de page-->
+    <footer class="mt-5">
+      <div class="d-flex justify-content-center">
+        <span>Nous sommes leaders dans 13 pays :</span>
+        <ul class="listefooter">
+          <li>
+            <a href=""> Pologne</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Turquie</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Espagne</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Italie</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Allemagne</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">République tchèque</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Portugal</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Mexique</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Colombie</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Bresil</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Argentine</a>
+            <span>,</span>
+          </li>
+          <li>
+            <a href="">Perou</a>
+            <span> et</span>
+          </li>
+          <li>
+            <a href="">Chili</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-center">www.docplanner.com © 2023</div>
+    </footer>
+  </body>
+</html>
